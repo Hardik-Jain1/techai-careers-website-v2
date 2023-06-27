@@ -17,13 +17,19 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4" > TechAI Careers </h1>
+      <h1 class="text-center mt-2 mb-4" > {{company_name}} Careers </h1>
       <img src="static/banner.jpg" id="banner" >
-      <h2 class="text-center mt-2 mb-4"> About TechAI </h2>
+      
+      <h2 class="text-center mt-2 mb-4"> About {{company_name}} </h2>
       <p class="lead">Welcome to TechAI Career, your one-stop destination for exploring exciting opportunities in the field of artificial intelligence and technology. We are passionate about connecting talented individuals with innovative companies that are at the forefront of AI research and development. Our platform is designed to help you navigate the ever-evolving landscape of AI careers and find your dream job in this rapidly expanding industry.<br>Our mission is to bridge the gap between talented individuals and leading companies, providing a platform where both can thrive. Whether you're an experienced AI expert or just starting your journey in this exciting field, TechAI Career offers a range of resources to support your career aspirations.</p>
   
       <h2 class="text-center mt-2 mb-4"> Open Positions </h2>
-      <p> Todo - Show the jobs here </p>
+      <p class="lead"> 
+        {%  for job in jobs%}
+        {% include 'jobitems.html' %}
+        {% endfor %}
+      </p>
+      
       <div class="text-center">
         <button class="btn btn-primary btn-lg"> Contact Us </button>
         <p class="mt-4"> Copyright 2023, TechAI</p>
