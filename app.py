@@ -23,6 +23,11 @@ JOBS = [{
   'location': "Paris, France"
 }, {
   'id': 5,
+  'title': "Computer Vision Engineer",
+  'location': "Zurich, Switzerland",
+  'salary': "CHF 250,000"
+}, {
+  'id': 6,
   'title': "Artificial Intelligence Engineer",
   'location': "Zurich, Switzerland",
   'salary': "CHF 300,000"
