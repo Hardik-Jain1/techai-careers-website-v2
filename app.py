@@ -11,7 +11,7 @@ JOBS = [{
   'id': 2,
   'title': "Data Science",
   'location': "London, England",
-  'salary': "£ 150,000"
+  'salary': "£ 160,000"
 }, {
   'id': 3,
   'title': "Machine Learning Engineer",
