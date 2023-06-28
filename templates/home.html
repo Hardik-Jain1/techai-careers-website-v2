@@ -8,21 +8,26 @@
 
     <style>
       #banner {
+        height: 460px;
         width: 100%;
-        height: 440px;
         object-fit: cover;
-        object-position: 0px 32%;
+        object-position: 0px 35%;
+        margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    {% include 'navbar.html' %}
+    <img src="static/banner.jpg" id="banner" >
+    <div class="container" id="about">
       <h1 class="text-center mt-2 mb-4" > {{company_name}} Careers </h1>
-      <img src="static/banner.jpg" id="banner" >
-      
-      <h2 class="text-center mt-2 mb-4"> About {{company_name}} </h2>
-      <p class="lead">Welcome to TechAI Career, your one-stop destination for exploring exciting opportunities in the field of artificial intelligence and technology. We are passionate about connecting talented individuals with innovative companies that are at the forefront of AI research and development. Our platform is designed to help you navigate the ever-evolving landscape of AI careers and find your dream job in this rapidly expanding industry.<br>Our mission is to bridge the gap between talented individuals and leading companies, providing a platform where both can thrive. Whether you're an experienced AI expert or just starting your journey in this exciting field, TechAI Career offers a range of resources to support your career aspirations.</p>
-  
+      <div class="row mb-4">
+      <p class="lead col-md-6">Welcome to TechAI Career, your one-stop destination for exploring exciting opportunities in the field of artificial intelligence and technology. We are passionate about connecting talented individuals with innovative companies that are at the forefront of AI research and development. Our platform is designed to help you navigate the ever-evolving landscape of AI careers and find your dream job in this rapidly expanding industry.<br>Our mission is to bridge the gap between talented individuals and leading companies, providing a platform where both can thrive. Whether you're an experienced AI expert or just starting your journey in this exciting field, TechAI Career offers a range of resources to support your career aspirations.         
+      </p>
+        <div class="d-none d-md-block col-md-6">
+      <img src="/static/people.jpg" class="rounded mx-auto d-block img-fluid", style="height:360px; width:auto; border-radius:4px;">
+        </div>
+      </div>
       <h2 class="text-center mt-2 mb-4"> Open Positions </h2>
       <p class="lead"> 
         {%  for job in jobs%}
@@ -31,9 +36,9 @@
       </p>
       
       <div class="text-center">
-        <button class="btn btn-primary btn-lg"> Contact Us </button>
-        <p class="mt-4"> Copyright 2023, TechAI</p>
+        <a href="mailto:hello@techai.ai?subject=Questions%20for%20Job%20Openings" class="btn btn-primary btn-lg"> Contact Us </a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
