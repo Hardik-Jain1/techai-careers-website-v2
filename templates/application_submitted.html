@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include 'bootstrap.html' %}
+    <title>Application Submitted</title>  
+  </head>
+    {% include 'navbar.html' %}
+    {% include 'banner.html' %}
+    <div class="container" id="about">
+      <h1 class="text-center mt-2 mb-4" > {{company_name}} Careers          </h1>
+      <p><b>Your Application has been for the role of "{{job["title"]}}" at TechAI Submitted Successfully!</b></p>
+      <div class="mb-2">
+        <b>Name</b>
+        <p>{{application['full_name']}}</p>
+      </div>
+  
+      <div class="mb-2">
+        <b>Email</b>
+        <p>{{application['email']}}</p>
+      </div>
+  
+      <div class="mb-2">
+        <b>LinkedIn URL</b>
+        <p>{{application['linkedin_url']}}</p>
+      </div>
+  
+      <div class="mb-2">
+        <b>Education</b>
+        <p>{{application['education']}}</p>
+      </div>
+    
+      <div class="mb-2">
+        <b>Work Experience</b>
+        <p>{{application['work_experience']}}</p>
+      </div>
+  
+      <div class="mb-2">
+        <b>Resume URL</b>
+        <p>{{application['resume_url']}}</p>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+  <body>
+  
+  </body>
+</html>
