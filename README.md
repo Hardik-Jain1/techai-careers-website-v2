@@ -1,4 +1,4 @@
-# careers-website
-A career website projects.
+# techai-careers-website-v2
+A career website project.
 Website link-
-https://techai-careers-website.onrender.com/
+https://techai-careers-website-v2.onrender.com/
