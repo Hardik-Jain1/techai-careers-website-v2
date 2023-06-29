@@ -5,7 +5,7 @@
     <div>
       <b>Location:</b> {{job['location']}}
     </div>
-    {% if 'salary' in job %}
+    {% if job['salary']!=None %}
     <div>
       <b>Salary:</b> {{job['salary']}}
     </div>
